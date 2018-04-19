@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import Slide from './Slide';
 import About from './About';
+import Footer from '../footer/Footer';
 
 class HomeContainer extends Component {
 
@@ -10,6 +11,7 @@ class HomeContainer extends Component {
             <div>
                <Slide />
                 <About />
+                <Footer />
             </div>
         );
     }

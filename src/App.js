@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Routes } from './routes';
 import './App.css';
+import Nav from './components/nav/NavContainer';
+
 
 class App extends Component {
 
@@ -9,7 +11,7 @@ class App extends Component {
             <div>
                 <div>
 
-
+                    <Nav />
                     <Routes />
 
                 </div>

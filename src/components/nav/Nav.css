@@ -1,0 +1,38 @@
+.nav{
+    width:100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    color:white;
+}
+.nav img{
+    margin: 0 0px 0 20px;
+    width:40px;
+
+}
+.nav_data{
+    margin: 0 20px 0 0;
+    display: flex;
+
+}
+hr{
+    width: 2px;
+    height: 11px;
+    border: none;
+    background: hsla(0,0%,100%,.8);
+    margin: auto 10px;
+}
+.nav_data p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+a:active, a:hover{
+    color: inherit;
+}
