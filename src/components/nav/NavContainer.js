@@ -9,7 +9,9 @@ class Nav extends Component {
     render() {
         return (
             <div className="nav" >
-                <img src={log} alt=""/>
+                <Link to="/">
+                    <img src={log} alt=""/>
+                </Link>
                 <div className="nav_data">
                     <hr className="divider"/>
                     <Link to="/login">

@@ -25,17 +25,17 @@ class Slide extends Component {
                                 className="owl-theme"
                                 loop margin={10} nav items={1}
                             >
-                                <div class="item">
+                                <div className="item">
                                     <img src="https://images.pexels.com/photos/711009/pexels-photo-711009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
 
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <img src="https://images.pexels.com/photos/604897/pexels-photo-604897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <img src="https://images.pexels.com/photos/258626/pexels-photo-258626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
                                 </div>
-                                <div class="item">
+                                <div className="item">
                                     <img src="https://images.pexels.com/photos/260645/pexels-photo-260645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
                                 </div>
                             
