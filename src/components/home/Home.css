@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One:500');
+
+.slide{
+    width: 100%;
+    text-align: center;
+    height:95vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/567633/pexels-photo-567633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    font-family: 'Poiret One', cursive;
+    font-size:30px;
+}
+.cover{
+    background-color: rgba(0,0,0,.5);
+    height:100%;
+    display: flex;
+    align-items: center;
+    width:100%;
+    color:white;
+
+}
+.cover div{
+    width:100%;
+}
+.logo{
+    width:35%;
+}
+
+/*About*/
+.about{
+    height:auto;
+    padding: 100px 5%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+
+}
+.box_about{
+    width:300px;
+    flex-grow: 1;
+    padding: 0 5% 0 5%;
+}
+.box_about h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+}
+.box_about p{
+    font-size: 20px;
+}
+/*.owl{*/
+    /*padding: 0 2%;*/
+/*}*/
+.item img{
+    width:auto;
+    height:450px;
+}
+.pad{
+    padding: 70px 5% 50px 5%;
+    font-family: 'Poiret One', cursive;
+}
+.fl{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.fl img{
+    width:200px;
+    margin: 0 10px;
+}
