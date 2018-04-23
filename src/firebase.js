@@ -1,7 +1,6 @@
 import * as firebase from 'firebase';
 
 let config = {
-
     apiKey: "AIzaSyAm7njNWhIQZXKILoMC0XkmABCnn2vyVdo",
     authDomain: "chatcito-e81ec.firebaseapp.com",
     databaseURL: "https://chatcito-e81ec.firebaseio.com",

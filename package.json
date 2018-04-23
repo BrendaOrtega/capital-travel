@@ -1,32 +1,24 @@
 {
-  "name": "capital-travel",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-<<<<<<< HEAD
-    "antd": "^3.4.1",
-=======
-    "firebase": "^4.12.1",
->>>>>>> c7984dcc5d7f8f964df07718d32bccf43eefcbfe
-    "font-awesome": "^4.7.0",
-    "owl.carousel": "^2.3.3",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-fontawesome": "^1.6.1",
-    "react-owl-carousel": "^2.2.0",
-    "react-owl-carousel2": "^0.3.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
-<<<<<<< HEAD
-    "uikit": "^3.0.0-beta.42"
-=======
-    "redux-thunk": "^2.2.0"
->>>>>>> c7984dcc5d7f8f964df07718d32bccf43eefcbfe
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "capital-travel",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "firebase": "^4.13.1",
+        "font-awesome": "^4.7.0",
+        "owl.carousel": "^2.3.3",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-fontawesome": "^1.6.1",
+        "react-owl-carousel": "^2.2.0",
+        "react-owl-carousel2": "^0.3.0",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.4",
+        "redux-thunk": "^2.2.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
 }
