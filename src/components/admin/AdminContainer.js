@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Navbar } from './Navbar'
-import { RuedaCard } from './RuedaCard'
 import { AdminBody } from './AdminBody'
 
 class RuedasContainer extends Component {

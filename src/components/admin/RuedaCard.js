@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../../assets/logo-inv.png'
 import './Admin.css'
 
 export const RuedaCard = ({ nombre, fecha, status, lugar, desc }) => (
