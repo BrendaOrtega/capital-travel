@@ -6,14 +6,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-
-
-                    <Routes />
-
-                </div>
-            </div>
+            <Routes />
         );
     }
 }
