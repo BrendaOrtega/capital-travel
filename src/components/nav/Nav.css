@@ -17,7 +17,7 @@
     display: flex;
 
 }
-hr{
+.line{
     width: 2px;
     height: 11px;
     border: none;
@@ -25,11 +25,11 @@ hr{
     margin: auto 10px;
 }
 .nav_data p{
-    margin-top: 20px;
+    margin-top: 15px;
     cursor: pointer;
 }
-a{
-    color: inherit;
+.nav a{
+    color: white;
     margin: 0;
     padding: 0;
 }
