@@ -17,11 +17,25 @@
     bottom: 2%;
 }
 
+/* Card Styles */
+
 .card-body {
+    padding: 5px;
     margin: 5px;
-    max-width: 440px;
+    max-width: 420px;
     border: 1px solid black;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+}
+
+.card-body h3 {
+    margin-bottom: 0px;
+}
+
+.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
