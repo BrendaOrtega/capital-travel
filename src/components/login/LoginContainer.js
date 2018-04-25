@@ -37,7 +37,7 @@ class LoginContainer extends Component {
             .then(usuario => {
                 let user = JSON.stringify(usuario);
                 localStorage.setItem("user", user);
-                this.props.history.push("/admin");
+                this.props.history.push("/dashboard");
                 console.log(user)
             })
             .catch(e => console.log(e));
