@@ -73,3 +73,27 @@ a{
     background-color: #75d21a !important;
     border-color:#75d21a !important;
 }
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month, .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date{
+    background:rgba(117,210,26,.2) !important;
+}
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-month, .ant-fullcalendar-fullscreen .ant-fullcalendar-today .ant-fullcalendar-date{
+    border-top-color: #75d21a !important;
+}
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value, .ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-value{
+    color: #75d21a !important;
+}
+.ant-radio-button-wrapper-checked{
+    color: #75d21a !important;
+}
+.ant-radio-button-wrapper-checked:first-child{
+    border-color:#75d21a !important;
+}
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month:hover, .ant-fullcalendar-fullscreen .ant-fullcalendar-date:hover{
+    background:rgba(117,210,26,.2) !important;
+}
+.ant-radio-button-wrapper-checked:hover, .ant-radio-button-wrapper-checked{
+    border-color:#75d21a !important;
+    box-shadow: -1px 0 0 0 #75d21a !important;
+
+}
+

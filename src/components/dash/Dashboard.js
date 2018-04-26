@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
-import { Menu, Icon } from 'antd';
-import {Link} from 'react-router-dom';
-import AdminContainer from '../admin/AdminContainer';
 import RuedaDetail from './RuedaDetail';
-import { Tabs, Select } from 'antd';
+import { Tabs } from 'antd';
 import Participantes from './Paticipantes';
 import CalendarContainer from './CalendarContainer';
 import Review from './Review';
-
+import {Cliente} from './Cliente';
 const TabPane = Tabs.TabPane;
-const Option = Select.Option;
 
 
 class Dashboard extends Component {
     state = {
         tabPosition: 'left',
     };
-    changeTabPosition = (tabPosition) => {
-        this.setState({ tabPosition });
-    };
+
     render() {
         return (
             <div style={{paddingTop:"60px"}}>
@@ -36,6 +30,9 @@ class Dashboard extends Component {
                     </TabPane>
                     <TabPane tab="Resumen" key="4">
                         <Review />
+                    </TabPane>
+                    <TabPane tab="Contacto" key="5">
+                        <Cliente />
                     </TabPane>
                 </Tabs>
 

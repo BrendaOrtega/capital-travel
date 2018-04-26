@@ -22,15 +22,15 @@ export const ReviewDisplay = ({  }) => (
                 </Timeline>
             </div>
             <div className="box_list">
-                <Card title="Citas Programadas" extra={<a href="#">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
+                <Card title="Citas Programadas" extra={<a href="/">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
                     <p>450 citas</p>
 
                 </Card>
-                <Card title="Citas Canceladas" extra={<a href="#">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
+                <Card title="Citas Canceladas" extra={<a href="/">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
                     <p>45 citas</p>
 
                 </Card>
-                <Card title="Citas Concluidas" extra={<a href="#">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
+                <Card title="Citas Concluidas" extra={<a href="/">More</a>} style={{ width: 300, height:120, margin: "0 0 20px 0" }}>
                     <p>300 citas</p>
 
                 </Card>

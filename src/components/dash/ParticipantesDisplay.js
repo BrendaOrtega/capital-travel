@@ -1,6 +1,5 @@
 import React from 'react'
 import './Detail.css'
-import FontAwesome from 'react-fontawesome';
 import { List, Avatar } from 'antd';
 
 const data = [

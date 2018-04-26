@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomeContainer from './components/home/HomeContainer';
 import LoginContainer from './components/login/LoginContainer'
-import PerfilContainer from './components/perfil/PerfilContainer';
 import AdminContainer from './components/admin/AdminContainer'
 import Dashboard from './components/dash/Dashboard';
 import RuedaDetail from './components/dash/RuedaDetail';
