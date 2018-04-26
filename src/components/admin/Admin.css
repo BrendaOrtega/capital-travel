@@ -1,7 +1,7 @@
 .wrapper {
     max-width: 960px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .card-container {
@@ -12,9 +12,21 @@
 }
 
 .floatButton {
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
+    background: #75d21a !important;
+    border: 1px solid #75d21a !important;
+    position: fixed !important;
+    right: 20px;
+    bottom: 20px;
+}
+
+.greenButton {
+    background: #75d21a !important;
+    border: 1px solid #75d21a !important;
+}
+
+.greenButton:hover {
+    background: #8fd64a !important;
+    border: 1px solid #8fd64a !important;
 }
 
 /* Card Styles */
@@ -33,9 +45,8 @@
     margin-bottom: 0px;
 }
 
-.style-one {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+/* Navbar Rueda de Negocios */
+
+ul#menu li {
+    display: inline;
 }
