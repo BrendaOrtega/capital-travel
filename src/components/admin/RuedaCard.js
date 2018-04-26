@@ -1,21 +1,21 @@
 import React from 'react'
 import './Admin.css'
-import { Card, Icon, Avatar } from 'antd';
+import { Card, Icon } from 'antd';
 
-export const RuedaCard = ({ nombre, fechaInicio, fechaFin, pais }) => (
-    <span>
+export const RuedaCard = ({ nombre, fechaInicio, fechaFin, pais, descripcion, linkImagen }) => (
+    <span style={{ margin: 'auto', display: 'flex', flexWrap: 'wrap' }}>
         <Card
             hoverable
-            style={{ width: '420px', margin: '5px' }}
-            cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
+            style={{ maxWidth: '420px', margin: '5px' }}
+            cover={<div style={{ width: '420px', height: '210px', backgroundImage: `url(${linkImagen})`, backgroundPosition: 'center', backgroundSize: 'cover' }}></div>}
             actions={[<Icon type="edit" />, <Icon type="delete" />]}
-            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
         >
             <h3>{nombre}</h3>
             <p>
                 <strong>Lugar: </strong> {pais} <br />
-                <strong>Fecha Inicio: </strong> {fechaInicio} | <strong>Fecha Fin: </strong> {fechaFin}<br />
-                <strong>Status: </strong>
+                <strong>Fecha Inicio: </strong> {fechaInicio} <br />
+                <strong>Fecha Fin: </strong> {fechaFin} <br />
+                <strong>Descripción: </strong> {descripcion}
             </p>
         </Card>
     </span >

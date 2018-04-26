@@ -16,6 +16,8 @@ class RuedasContainer extends Component {
             fechaFin: '',
             citas: '',
             sector: '',
+            descripcion: '',
+            linkImagen: 'https://images.unsplash.com/photo-1517957665560-7b7f398b103a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a07c3b79cce67ace564c6fa025a3ef7b&w=1000&q=80'
         },
         eventos: [],
     }
@@ -27,6 +29,7 @@ class RuedasContainer extends Component {
             visible: true,
         });
     }
+
     handleOk = () => {
         this.setState({ loading: true });
         const nuevoEvento = this.state.evento
@@ -75,6 +78,14 @@ class RuedasContainer extends Component {
         this.setState({ evento })
     };
 
+
+    saveDescription = (e) => {
+        let evento = this.state.evento;
+        const value = e.target.value
+        evento['descripcion'] = value;
+        this.setState({ evento })
+    }
+
     onSubmit = (e) => {
         e.preventDefault();
         const nuevoEvento = this.state.evento
@@ -90,10 +101,6 @@ class RuedasContainer extends Component {
                 eventos.push(dbEventos)
                 this.setState({ eventos })
             });
-    }
-
-    saveInput = (e) => {
-        console.log(e.target.value)
     }
 
     render() {
@@ -137,6 +144,7 @@ class RuedasContainer extends Component {
                     saveCita={this.saveCita}
                     saveSector={this.saveSector}
                     onSubmit={this.onSubmit}
+                    saveDescription={this.saveDescription}
                 />
             </div>
         )

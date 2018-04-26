@@ -3,9 +3,10 @@ import { RuedaCard } from './RuedaCard'
 import { Button, Modal, Form, DatePicker, Input, AutoComplete } from 'antd'
 const { RangePicker } = DatePicker
 const FormItem = Form.Item
+const { TextArea } = Input
 
 
-export const AdminBody = ({ onSubmit, saveSector, saveCita, saveFechas, savePais, eventos, showModal, handleOk, handleCancel, loading, visible, formItemLayout, dataSource, dateFormat, saveNombre }) => (
+export const AdminBody = ({ saveDescription, onSubmit, saveSector, saveCita, saveFechas, savePais, eventos, showModal, handleOk, handleCancel, loading, visible, formItemLayout, dataSource, dateFormat, saveNombre }) => (
     < section >
         <div className="card-container">
             {eventos.map((r, index) => <RuedaCard key={index} {...r} />)}
@@ -46,6 +47,10 @@ export const AdminBody = ({ onSubmit, saveSector, saveCita, saveFechas, savePais
                 <FormItem {...formItemLayout}>
                     Industria o Sector:
                     <Input onChange={saveSector} name='sector' placeholder='Ej. Negocios.' />
+                </FormItem>
+                <FormItem {...formItemLayout}>
+                    Descripción del Evento:
+                    <TextArea rows={4} onChange={saveDescription} />
                 </FormItem>
             </Form>
         </Modal>
