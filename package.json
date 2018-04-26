@@ -2,6 +2,9 @@
   "name": "capital-travel",
   "version": "0.1.0",
   "private": true,
+  "theme": {
+    "primary-color": "blue",
+  },
   "dependencies": {
     "antd": "^3.4.3",
     "antd-init": "^2.0.6",

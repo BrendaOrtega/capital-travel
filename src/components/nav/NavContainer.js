@@ -12,8 +12,8 @@ class Nav extends Component {
                     <img src={log} alt="" />
                 </Link>
                 <div className="nav_data">
-                    <hr className="divider" />
-                    <Link to="/login">
+                    <hr className="line" />
+                    <Link to="/login" >
                         <p>Login</p>
                     </Link>
                 </div>

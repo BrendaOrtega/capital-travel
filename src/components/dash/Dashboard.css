@@ -1,0 +1,6 @@
+.box_tab{
+    width:100%;
+}
+.ant-tabs-nav .ant-tabs-tab-active{
+    color:#75d21a !important;
+}

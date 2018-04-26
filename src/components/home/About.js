@@ -44,15 +44,16 @@ class Slide extends Component {
                     </div>
                 </div>
                 <div className="pad">
-                    <div className="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style={{backgroundImage:`url("https://images.pexels.com/photos/953216/pexels-photo-953216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")`}}>
+                    <div className="fix" style={{backgroundImage:`url("https://images.pexels.com/photos/953216/pexels-photo-953216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")`}}>
                         <div className="cover">
-                        <div className="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                            <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Descarga nuestra app</h1>
-                            <div  uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;" className="fl">
+                        <div className="">
+                            <h1 >Descarga nuestra app</h1>
+                            <div  className="fl">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2000px-Download_on_the_App_Store_Badge.svg.png" alt=""/>
                                 <img src="https://mobileport.com.mx/wp-content/uploads/2017/11/googleplay_button_es.png" alt=""/>
                             </div>
-                            <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">No es solo una reunión, es una experiencia.</p>
+                            <br/>
+                            <p >No es solo una reunión, es una experiencia.</p>
                         </div></div>
                     </div>
                 </div>

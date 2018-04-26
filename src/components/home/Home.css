@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One:500');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 .slide{
     width: 100%;
@@ -17,6 +17,7 @@
     align-items: center;
     width:100%;
     color:white;
+    text-align: center;
 
 }
 .cover div{
@@ -60,6 +61,15 @@
 .pad{
     padding: 70px 5% 50px 5%;
     font-family: Avenir;
+    color:white;
+}
+.pad h1{
+    color:white;
+}
+.fix{
+    background-position: center;
+    background-size: cover;
+    height:350px;
 }
 .fl{
    display: flex;
