@@ -1,14 +1,15 @@
 import React from 'react'
 import './Admin.css'
 import { Card, Icon } from 'antd';
+import capitalTravel from '../../assets/capitalTravel.jpg'
 
-export const RuedaCard = ({ nombre, fechaInicio, fechaFin, pais, descripcion, linkImagen }) => (
-    <span style={{ margin: 'auto', display: 'flex', flexWrap: 'wrap' }}>
+export const RuedaCard = ({ remove, nombre, id, fechaInicio, fechaFin, pais, descripcion, linkImagen }) => (
+    <span style={{ margin: 'auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         <Card
             hoverable
-            style={{ maxWidth: '420px', margin: '5px' }}
-            cover={<div style={{ width: '420px', height: '210px', backgroundImage: `url(${linkImagen})`, backgroundPosition: 'center', backgroundSize: 'cover' }}></div>}
-            actions={[<Icon type="edit" />, <Icon type="delete" />]}
+            style={{ width: '300px', margin: '5px', flexGrow: '1' }}
+            cover={<div style={{ width: '298px', height: '210px', backgroundImage: `url(${linkImagen ? linkImagen : capitalTravel})`, backgroundPosition: 'center', backgroundSize: 'cover' }}></div>}
+            actions={[<Icon type="edit" />, <Icon type="delete" onClick={() => remove(id)} />]}
         >
             <h3>{nombre}</h3>
             <p>
@@ -20,3 +21,4 @@ export const RuedaCard = ({ nombre, fechaInicio, fechaFin, pais, descripcion, li
         </Card>
     </span >
 );
+
