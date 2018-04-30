@@ -3,12 +3,13 @@ import { RuedaCard } from './RuedaCard'
 import { Button, Modal, Form, DatePicker, Input, AutoComplete } from 'antd'
 const { RangePicker } = DatePicker
 const FormItem = Form.Item
+const { TextArea } = Input
 
 
-export const AdminBody = ({ onSubmit, saveSector, saveCita, saveFechas, savePais, eventos, showModal, handleOk, handleCancel, loading, visible, formItemLayout, dataSource, dateFormat, saveNombre }) => (
+export const AdminBody = ({ remove, savePhoto, saveDescription, onSubmit, saveSector, saveCita, saveFechas, savePais, eventos, showModal, handleOk, handleCancel, loading, visible, formItemLayout, dataSource, dateFormat, saveNombre }) => (
     < section >
         <div className="card-container">
-            {eventos.map((r, index) => <RuedaCard key={index} {...r} />)}
+            {eventos.map((r, index) => <RuedaCard remove={remove} key={index} {...r} />)}
         </div>
         <Button type="primary floatButton greenButton" style={{ fontSize: '20px' }} onClick={showModal}>Agregar Rueda</Button>
         <Modal
@@ -46,6 +47,16 @@ export const AdminBody = ({ onSubmit, saveSector, saveCita, saveFechas, savePais
                 <FormItem {...formItemLayout}>
                     Industria o Sector:
                     <Input onChange={saveSector} name='sector' placeholder='Ej. Negocios.' />
+                </FormItem>
+                <FormItem {...formItemLayout}>
+                    Descripción del Evento:
+                    <TextArea rows={4} onChange={saveDescription} />
+                </FormItem>
+                <FormItem {...formItemLayout}>
+                    Imagen del evento:
+                    <div>
+                        <input type="file" onChange={savePhoto} />
+                    </div>
                 </FormItem>
             </Form>
         </Modal>
