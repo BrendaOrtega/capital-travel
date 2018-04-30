@@ -6,7 +6,7 @@ export const RuedaCard = ({ nombre, fechaInicio, fechaFin, pais }) => (
     <span>
         <Card
             hoverable
-            style={{ width: '420px', margin: '5px' }}
+            style={{ width: '300px', margin: '5px' }}
             cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
             actions={[<Icon type="edit" />, <Icon type="delete" />]}
             avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
