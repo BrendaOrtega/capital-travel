@@ -4,6 +4,7 @@ import { AdminBody } from './AdminBody'
 import firebase from 'firebase'
 import moment from 'moment'
 import { message } from 'antd'
+import {getProductById, updateProductById} from '../../api/firebase';
 
 class RuedasContainer extends Component {
     state = {

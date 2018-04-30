@@ -4,7 +4,6 @@ import HomeContainer from './components/home/HomeContainer';
 import LoginContainer from './components/login/LoginContainer'
 import AdminContainer from './components/admin/AdminContainer'
 import Dashboard from './components/dash/Dashboard';
-import RuedaDetail from './components/dash/RuedaDetail';
 
 
 export const Routes = () => (
@@ -14,6 +13,7 @@ export const Routes = () => (
         <Route path="/login" component={LoginContainer} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/admin" component={AdminContainer} />
-        <Route path="/detalle" component={RuedaDetail} />
+            <Route path="/rueda/:id" component={Dashboard} />
+
     </Switch>
 );
